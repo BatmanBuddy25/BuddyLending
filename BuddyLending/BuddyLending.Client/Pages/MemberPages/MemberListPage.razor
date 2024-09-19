@@ -1,0 +1,28 @@
+﻿@page "/member-list"
+@rendermode InteractiveAuto
+
+<PageTitle>Member List</PageTitle>
+
+<button type="button" class="btn btn-primary" @onclick="OnAddMember">Add Member</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var _item in Member_List)
+        {
+            <tr>
+                <th>@_item.MemberNo</th>
+                <th>@_item.FirstName</th>
+                <th>@_item.LastName</th>
+                <th>@_item.Address</th>
+            </tr>
+        }
+    </tbody>
+</table>

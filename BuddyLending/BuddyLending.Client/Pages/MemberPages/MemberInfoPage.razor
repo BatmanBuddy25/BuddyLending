@@ -1,0 +1,61 @@
+﻿@page "/member-info"
+@rendermode InteractiveAuto
+
+<PageTitle>Add New</PageTitle>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Member No</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Member number" @bind-value="Obj.MemberNo">
+</div>
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Last name" @bind-value="Obj.LastName">
+</div>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="First name" @bind-value="Obj.FirstName">
+</div>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Middle Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Middle name" @bind-value="Obj.MiddleName">
+</div>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Address</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Address" @bind-value="Obj.Address">
+</div>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Civil Status</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Civil status" @bind-value="Obj.Civil">
+</div>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Contact No</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Contact no" @bind-value="Obj.Contact">
+</div>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">CBU</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="cbu" @bind-value="Obj.CBU">
+</div>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Member Status</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Member status" @bind-value="Obj.MemStatus">
+</div>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Referal Id</label>
+    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Referal Id" @bind-value="Obj.ReferralId">
+</div>
+
+<div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Referal Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Referal name" @bind-value="Obj.ReferralName">
+</div>
+
+
+<button type="button" class="btn btn-primary" @onclick="OnInsertData">Save</button>

@@ -1,0 +1,8 @@
+﻿
+I. ls
+II. (Copy ProjectName) cd BuddyLending
+III. ls
+IV.  cd BuddyLending
+V. ls (hantud mo gawas ang program dot cs)
+
+1st = add-migration Initails
